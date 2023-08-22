@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+:root {
+   --color:orange;
+}
+span{
+    color: var(--color)
+}
+.hedbg{
+    background-image: url(img/black1.avif);
+    background-repeat: repeat;
+    background-position: bottom;
+}
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    /* display: flex; */
+}
+.mar{
+    width: 90%;
+    /* background-color: aquamarine; */
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    /* background-color: var(--color); */
+    /* padding: 10px; */
+}
+/* .container{
+    width: 90%;
+    margin: 0 auto;
+} */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+    overflow: hidden;
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+    /* overflow: hidden; */
+}
+.nav__list__primary--list{
+    margin: auto;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+.nav-link{
+    /* color: var(--color); */
+    /* color: var(--color); */
+    color:rgb(209, 175, 63);
+    font-weight: 700;
+    text-decoration: none;
+    overflow: hidden;
+}
+.logo{
+    /* color: white; */
+    margin-right: 1rem;
+    color:var(--color);
+}
+.fa-shopping-cart{
+    width: 2rem;
+    color:white;
+}
+.fa-search{
+    /* width: 2rem; */
+    margin-left: 1rem;
+    color: white;
+}
+.nav-item:hover{
+    text-decoration: underline orange 3px;
+}
+/* container starts here */
+.container{
+    width: 90%;
+    /* background-color: turquoise; */
+    padding: 10px 0;
+    margin: 0  auto;
+}
+.heading{
+    font-size: 2rem;
+    line-height: 1;
+    color: white;
+    /* font-family: monospace; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.conbg{
+    /* background-image: url(img/hotel2.jpg); */
+    background-image: url(img/pexels-chan-walrus-941861.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.search{
+    margin-top: 1rem;
+    border-radius: .5rem;
+    /* margin-left: 5rem; */
+    /* margin-right: auto; */
+}
+.search input{
+    padding: .6rem 1.4rem;
+}
+.search button{
+    padding: .6rem 1.4rem;
+    background-color: var(--color);
+}
+/* form ends here */
+.social_links{
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: bisque; */
+}
+.social_links a{
+    padding-right: 4rem;
+}
+.so{
+    width: 2rem;
+}
+.second{
+    border-radius: .6rem;
+}
+/* .social_links ends here */
+/* guests hterts here */
+.guests{
+    width:100%;
+    /* background-color:red; */
+    background-image: url(img/zomato.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    padding: 10px;
+}
+.guestst{
+    font-size: 1.4rem;
+    /* color: white; */
+}
+.slogans{
+    padding-top: 2rem;
+    width: 60%;
+    /* background-color: blanchedalmond; */
+}
+
+/* end of slogan */
+.order{
+    background-color:rgb(11, 11, 11);
+}
+.order-one{
+    /* background-color: burlywood; */
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+.eat{
+    background-image: url(img/black3.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.eat p{
+    font-size: 1.2rem;
+}
+.eat-images{
+    /* background-color: red; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto; 
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+}
+.fo{
+    padding-right: .6rem;
+    padding-left: .6rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+/* playstore starts here */
+.bg{
+    /* background-color: tomato; */
+    padding: 50px 0;
+}
+.playstore{
+    background-color: whitesmoke;
+}
+.alikad{
+    width: 50%;
+    /* background-color: thistle; */
+    padding: 100px;
+}
+.appi{
+    width: 50%;
+}
+.palikad{
+    background-color: black;
+    width: 50%;
+    display: flex;
+    /* padding: ; */
+}
+.mobi{
+    width: 40%;
+    margin-left: 2rem;
+    padding: 50px 0;
+}
+/* sir starts here */
+.center{
+    text-align: center;
+}
+.sirr{
+    width: 50%;
+    border-radius: 5rem;
+    /* height: 20rem; */
+}
+@media(max-width:770px){
+    .container{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .fimg{
+        width: 80%;
+    }
+    .eat-images{
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+    .fo{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .alikad , .palikad{
+        width: 100%;
+    }
+}
+@media(max-width:370px){
+    .container{
+        width: 100%;
+    }
+    .guestst{
+        font-size: 1rem;
+    }
+    .fimg{
+        width: 80%;
+        height: 200px;
+    }
+    
+    .order-one img{
+        height: 100px;
+    }
+    .alikad{
+        padding: 20px 0;
+        width: 90%;
+    }
+}
+@media(max-width:350px){
+    .order-one img{
+        height: 100px;
+    }
+    .alikad{
+        padding: 20px 0;
+        width: 90%;
+    }
+}
+@media(max-width:300px){
+    .order-one img{
+        height: 100px;
+    }
+    .alikad{
+        padding: 20px 0;
+        width: 90%;
+    }
+}
